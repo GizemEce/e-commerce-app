@@ -13,14 +13,14 @@ const Navbar = () => {
             <h1 className='w-full text-3xl font-bold text-[#00df9a]'>
                 REACR.
             </h1>
-            <ul className='flex hidden'>
+            <ul className='hidden md:flex'>
                 <li className='p-4'>Home</li>
                 <li className='p-4'>Company</li>
                 <li className='p-4'>Resources</li>
                 <li className='p-4'>About</li>
                 <li className='p-4'>Contact</li>
             </ul>
-            <div onClick={handleNav}>
+            <div onClick={handleNav} className='block md:hidden'>
                 {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} /> }
             </div>
             <div className={!nav ? 'fixed left-0 top-0 w-[60%] h-full boder-r boder-r-gray-900 bg-[#000300] ease-in-out duration-500' : 'fixed left-[-100%]' }>
