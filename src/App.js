@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Analytics from "./components/Analytics";
 import Newsletter from "./components/Newsletter";
 import Card from "./components/Card";
+import Footer from "./components/Footer";
 
 import Single from './assets/single.png';
 import Double from './assets/double.png';
@@ -13,10 +14,10 @@ import Triple from './assets/triple.png';
 function App() {
   return (
     <div>
-      <Navbar />
-      <Hero />
-      <Analytics />
-      <Newsletter />
+        <Navbar />
+        <Hero />
+        <Analytics />
+        <Newsletter />
       
       {/* Pricing Section */}
         <div className='w-full py-[10rem] px-4 bg-white'>
@@ -44,6 +45,7 @@ function App() {
             />
             </div>
         </div>
+        <Footer />
     </div>
   );
 }
